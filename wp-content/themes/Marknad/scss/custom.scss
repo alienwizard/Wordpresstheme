@@ -1,0 +1,410 @@
+$maincolor: #493f9f;
+$backgroundColor: white;
+$bigfontsize: 40px;
+$defaultFont: "paralucent";
+$textcolor: #484848;
+$secondaryColor: #E5A745;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*GENERAL RULES*/
+body,html{
+	height:100%;
+}
+body{
+	font-family: "paralucent";
+	line-height:1;
+	color: $textcolor;
+}
+
+
+
+h1{
+	font-family: "paralucent";
+	font-size: 35px;
+	margin: 10px 0px 20px;
+	font-weight:bold;
+
+}
+h2{
+	font-size: 25px;
+	margin: 5px 0px 10px;
+}
+
+h3{
+
+	font-size:20px;
+	margin: 0px 0px 10px;
+	font-weight:600;
+}
+
+
+p{
+	margin: 10px 0px;
+}
+.clearfix{
+	clear:both;
+}
+
+.container p{
+	line-height:1.25;
+}
+
+/*GENERAL END*/
+
+header{
+	width: 100%;
+	position:fixed;
+	z-index:99;
+
+.top-header{
+	padding: 5px 0px;
+	background-color:$backgroundColor;
+
+	.search{
+		margin-top: 10px;
+	}
+
+	.loggin{
+		text-align: right;
+	}
+
+	input{
+		font-size: 19px;
+		padding:5px 10px;
+		width: 80%;
+		    height: 35px;
+		display: block;
+		float: left;
+	}
+
+	button{
+		display: block;
+		width: 20%;
+		background-color:$maincolor;
+		border:none;
+		    height: 35px;
+		color: white;
+		float: left;
+	}
+
+	.kontakt span{
+		display: block;
+		width: 100%;
+
+		margin: 10px 0px;
+
+		i.fa{
+
+			margin-right: 25px;
+
+		}
+	}
+
+
+	.kontakt span:first-child{
+		margin-top: 0px;
+	}
+
+	i.fa{
+		font-size: 25px;
+		
+	}
+}
+
+#page-logo{
+	width: 100%;
+	float:left;
+
+	a{
+		color: black;
+	}
+}
+
+
+.bottom-header{
+	background-color:$maincolor;
+
+	nav {
+
+		width: 100%;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .current_page_item{
+  	background-color:white;
+  	a{
+  		color: black;
+  	}
+  }
+
+  li { float:left;display: inline-block; }
+
+  a {
+    display: block;
+    padding: 15px 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+
+
+}
+
+}
+
+
+}
+
+
+/*HEADER END*/
+
+.banner{
+	min-height:450px;
+	height:90vh;
+	background-size:cover;
+	background-position:50% 70%;
+	padding: 250px 0px;
+	position:relative;
+
+	.bannerbox{
+
+		
+		float: left;
+		background-color: rgba(255, 255, 255, 1);
+		color: black;
+		border 5px solid $maincolor;
+
+
+
+		h1.title{
+			font-size: 40px;
+			margin-top:0px; 
+			padding: 40px 10px;
+			text-align: center;
+			border-bottom:5px  solid $maincolor;
+			margin-bottom: 0px;
+			font-weight: 900;
+			font-size: 85px;
+			color: $maincolor;
+			font-family: "balboa-plus-primary";
+
+		}
+
+		p{
+			margin-bottom: 30px;
+			padding: 20px 40px;
+			font-size: 19px;
+			line-height: 1.6;
+		}
+	}
+}
+
+.page-content{
+
+
+	#forelasning-info {
+    margin-top: -30px;
+        padding: 15px 0px;
+
+
+    h2{
+    	float: left;
+
+    	span{
+    	float: right;
+    	font-size: 18px;
+    	margin-top: 4px;
+    	margin-left: 15px;
+    	}
+    	border-bottom: 4px solid $maincolor;
+    }
+
+
+
+    i{
+    	font-size: 35px;
+    	margin-right: 10px; 
+    	float: left;
+    	color: $maincolor;
+    }
+}
+
+	#intro-text{
+		margin:40px 0px;
+	}
+
+	margin: 50px 0px;
+
+.sidebar{
+
+	margin-top:-50px;
+
+	.title{
+
+		font-weight: 700;
+		margin-top: 0px;
+		padding: 15px 0px;
+		color: white;
+		background-color: $maincolor;
+		text-align: center;
+		font-size: 45px;
+		font-family: "balboa-plus-primary";
+
+}
+
+.news-item:first-child{
+	margin-top:5px;
+}
+
+.news-item{
+	margin: 30px 0px;
+
+	padding: 5px 10px;
+
+	.news-info{
+		width: 100%;
+		overflow: auto;
+		text-align:right;
+		padding-bottom: 5px;
+		border-bottom: 2px solid $maincolor;
+
+	h3{
+		color: black;
+		font-weight: bold;
+		width: 50%;
+		text-align: left;
+		float: left;
+		a{
+			color: black;
+		}
+	}
+	span{
+		width: 50%;
+		float: right;
+		display: block;
+	}
+}
+	p{
+	}
+
+}
+
+}
+
+.tjanster{
+
+	.col-md-6{
+		overflow: hidden;
+	}
+	margin-bottom: 50px;
+
+.tjanst-item:hover{
+	transform:scale(1.1);
+}
+.tjanst-item{
+	width: 100%;
+	height:274px;
+	position:relative;
+	margin: 30px 0px;
+	color:white;
+	background-size:cover;
+	transition: all .2s ease-in-out;
+
+
+
+
+	h3{
+		position:absolute;
+		top: 50%;
+		text-align:center;
+		left: 0px;
+		right: 0px;
+		text-shadow: 0px 5px 10px black;
+		font-size: 30px;
+		margin: 0px;
+		font-weight: 800;
+		margin-top: -15px;
+	}
+
+	i.fa{
+		font-size: 30px;
+		position:absolute;
+		top: 60%;
+		left:0px;
+		right: 0px;
+		text-align: center;
+		display: block;
+
+	}
+}
+
+}
+
+}
+
+
+/*Footer*/
+
+footer{
+	background-color: $maincolor;
+	color:white;
+	padding: 40px 0px;
+
+
+	i.fa{
+		font-size: 30px;
+
+	}
+}
